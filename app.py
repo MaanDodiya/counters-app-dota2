@@ -3,7 +3,6 @@ from tkinter import *
 from tkinter import messagebox
 from tkinter import ttk
 import requests
-import codecs
 import csv
 import progressbar
 import pickle
@@ -360,12 +359,12 @@ L1 = Label(top, text="The counters are:",
 L1.place(x=5, y=230, anchor='nw')
 
 # Counters List
-text2 = Text(top, bg='#801437', fg="#ffffff", padx=10, font="courier 10")
+text2 = Text(top, bg='#801437', fg="#ffffff", padx=5, font="courier 10")
 text2.place(x=0, y=255, height=345, width=300)
 text2.configure(state='disabled')
 
 # Counters List #2
-text3 = Text(top, bg='#801437', fg="#ffffff", padx=10)
+text3 = Text(top, bg='#801437', fg="#ffffff", padx=5)
 text3.place(x=300, y=255, height=345, width=300)
 text3.configure(state='disabled')
 
