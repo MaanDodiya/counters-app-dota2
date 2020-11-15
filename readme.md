@@ -27,20 +27,16 @@ Run the python file in terminal
 ### Screenshots
 
 Type hero(s) and click **Add Heroes**
-<img src="images/1.jpg">
-<br>
+![](images/1.jpg)
 
 Click **Find Counters**
-<img src="images/2.jpg">
-<br>
+![](images/2.jpg)
 
 It will show possible counter picks for the chosen hero(s)
-<img src="images/3.jpg">
-<br>
+![](images/3.jpg)
 
 Update button will require **active internet connection**. It will fetch updated counters from [DotaBuff](https://https://www.dotabuff.com/) in around 2-3 minutes.
-<img src="images/4.jpg">
-<br>
+![](images/4.jpg)
 
 ---
 
