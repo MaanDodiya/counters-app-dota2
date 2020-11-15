@@ -31,9 +31,13 @@ Run the python file in terminal
 3. It will show possible counter picks for the chosen hero(s)
 4. Update button will require **active internet connection**. It will fetch updated counters from [DotaBuff](https://https://www.dotabuff.com/) in around 2-3 minutes.
 
-![](images/2.jpg)
-![](images/3.jpg)
-![](images/4.jpg)
+[<img src="images/1.jpg" width="400"/>](images/1.jpg)
+
+[<img src="images/2.jpg" width="400"/>](images/2.jpg)
+
+[<img src="images/3.jpg" width="400"/>](images/3.jpg)
+
+[<img src="images/4.jpg" width="400"/>](images/4.jpg)
 
 ---
 
