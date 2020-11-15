@@ -26,24 +26,21 @@ Run the python file in terminal
 
 ### Screenshots
 
-Type hero(s) and click **Add Heroes**
-![](images/1.jpg)
+1. Type hero(s) and click **Add Hero**
+2. Click **Find Counters**
+3. It will show possible counter picks for the chosen hero(s)
+4. Update button will require **active internet connection**. It will fetch updated counters from [DotaBuff](https://https://www.dotabuff.com/) in around 2-3 minutes.
 
-Click **Find Counters**
 ![](images/2.jpg)
-
-It will show possible counter picks for the chosen hero(s)
 ![](images/3.jpg)
-
-Update button will require **active internet connection**. It will fetch updated counters from [DotaBuff](https://https://www.dotabuff.com/) in around 2-3 minutes.
 ![](images/4.jpg)
 
 ---
 
 ### About the author
 
-- Name: Maan _"2di.[L]ogan"_ Dodiya
-- MMR: 2.5k
-- Roles: Offlane, Support
-- Region: SEA
-- Heroes: Centaur Warrunner, Dazzle, Grimstroke, Dragon Knight, Doom
+- **Name**: Maan "2di.[L]ogan" Dodiya
+- **MMR**: 2.5k
+- **Roles**: Offlane, Support
+- **Region**: SEA
+- **Heroes**: Centaur Warrunner, Dazzle, Grimstroke, Dragon Knight, Doom
