@@ -316,10 +316,11 @@ input_heroes = []
 
 # Main window
 top = Tk()
-top.geometry("600x700")
+top.geometry("700x710")
 top.title("Counters App")
 top.configure(bg='#2c152b')
 top.iconbitmap(r'Dota-2.ico')
+
 
 # Label for entry bar
 L1 = Label(top, text="Enter Hero Name:", bg="#2c152b",
@@ -332,7 +333,8 @@ E1 = Entry(top, bd=1, bg="#801437", fg="#ffffff",
 E1.place(relx=0.01, y=27, relwidth=0.98)
 
 # Add hero button
-BA = Button(top, text="Add Hero", command=add_hero, bg="#4f0f32", fg="#fef389")
+BA = Button(top, text="Add Hero", command=add_hero,
+            bg="#4f0f32", fg="#fef389", relief=RAISED)
 BA.place(relx=0.5, y=50, anchor="n")
 
 # Selected hero list frame
@@ -341,38 +343,38 @@ text_frame.place(relx=0.5, y=85, anchor='n', height=100, relwidth=1)
 
 # The text bar
 text = Text(text_frame, bg='#801437', fg="#ffffff",
-            padx=10,  font="courier 10")
+            padx=10,  font="courier 10", bd=0)
 text.place(height=100, relwidth=1)
 text.configure(state='disabled')
 
 # Find Counters' Button
 BC = Button(top, text="Find Counters", command=find_counter,
-            bg="#4f0f32", fg="#fef389")
-BC.place(relx=0.3, y=185, anchor='n')
+            bg="#4f0f32", fg="#fef389", relief=RAISED)
+BC.place(relx=0.3, y=195, anchor='n')
 
 # Clear Counters' List Button
 BL = Button(top, text="Clear Heroes", command=clear_heroes,
-            bg="#4f0f32", fg="#fef389")
-BL.place(relx=0.7, y=185, anchor='n')
+            bg="#4f0f32", fg="#fef389", relief=RAISED)
+BL.place(relx=0.7, y=195, anchor='n')
 
 # Label for counters
 L1 = Label(top, text="Counters:",
            bg="#2c152b", fg="#fef389", font="Arial 10")
-L1.place(relx=0.01, y=230, anchor='nw')
+L1.place(relx=0.01, y=235, anchor='nw')
 
 # Counters List
 text2 = Text(top, bg='#801437', fg="#ffffff", padx=5)
-text2.place(x=0, y=255, height=345, relwidth=0.5)
+text2.place(x=0, y=260, height=345, relwidth=0.5)
 text2.configure(state='disabled')
 
 # Counters List #2
 text3 = Text(top, bg='#801437', fg="#ffffff", padx=5)
-text3.place(relx=0.5, y=255, height=345, relwidth=0.5)
+text3.place(relx=0.5, y=260, height=345, relwidth=0.5)
 text3.configure(state='disabled')
 
 # Latest Update History
 L1 = Label(top, text=get_update_history(), bg="#2c152b", fg="#fef389")
-L1.place(relx=0.5, y=615, anchor='center')
+L1.place(relx=0.5, y=620, anchor='center')
 
 # Progress bar
 progress_var = DoubleVar()
@@ -381,7 +383,7 @@ s.configure("bar.Horizontal.TProgressbar", troughcolor="#ffffff", bordercolor="#
             background="#000000", lightcolor="#000000", darkcolor="#000000")
 progressbar = ttk.Progressbar(
     top, variable=progress_var, maximum=120, mode="determinate")
-progressbar.place(relx=0.5, y=640, anchor="center", width=200)
+progressbar.place(relx=0.5, y=645, anchor="center", width=200)
 
 # Update Button
 BU = Button(top, text="Update", command=counter_update,
