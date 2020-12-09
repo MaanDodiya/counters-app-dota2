@@ -323,24 +323,26 @@ top.iconbitmap(r'Dota-2.ico')
 
 # Label for entry bar
 L1 = Label(top, text="Enter Hero Name:", bg="#2c152b",
-           fg="#fef389")
-L1.place(x=5, y=0)
+           fg="#fef389", font="Arial 10")
+L1.place(relx=0.01, y=0)
 
 # The entry bar
-E1 = Entry(top, bd=1, bg="#801437", fg="#ffffff", insertbackground="#ffffff")
-E1.place(y=27, width=600)
+E1 = Entry(top, bd=1, bg="#801437", fg="#ffffff",
+           insertbackground="#ffffff", font="courier 10")
+E1.place(relx=0.01, y=27, relwidth=0.98)
 
 # Add hero button
 BA = Button(top, text="Add Hero", command=add_hero, bg="#4f0f32", fg="#fef389")
 BA.place(relx=0.5, y=50, anchor="n")
 
 # Selected hero list frame
-text_frame = Frame(top, bg="#801437", height=100, width=600)
-text_frame.place(relx=0.5, y=85, anchor='n', height=100, width=600)
+text_frame = Frame(top, bg="#801437", height=100)
+text_frame.place(relx=0.5, y=85, anchor='n', height=100, relwidth=1)
 
 # The text bar
-text = Text(text_frame, bg='#801437', fg="#ffffff", padx=10)
-text.place(height=100, width=600)
+text = Text(text_frame, bg='#801437', fg="#ffffff",
+            padx=10,  font="courier 10")
+text.place(height=100, relwidth=1)
 text.configure(state='disabled')
 
 # Find Counters' Button
@@ -354,18 +356,18 @@ BL = Button(top, text="Clear Heroes", command=clear_heroes,
 BL.place(relx=0.7, y=185, anchor='n')
 
 # Label for counters
-L1 = Label(top, text="The counters are:",
-           bg="#2c152b", fg="#fef389")
-L1.place(x=5, y=230, anchor='nw')
+L1 = Label(top, text="Counters:",
+           bg="#2c152b", fg="#fef389", font="Arial 10")
+L1.place(relx=0.01, y=230, anchor='nw')
 
 # Counters List
-text2 = Text(top, bg='#801437', fg="#ffffff", padx=5, font="courier 10")
-text2.place(x=0, y=255, height=345, width=300)
+text2 = Text(top, bg='#801437', fg="#ffffff", padx=5)
+text2.place(x=0, y=255, height=345, relwidth=0.5)
 text2.configure(state='disabled')
 
 # Counters List #2
 text3 = Text(top, bg='#801437', fg="#ffffff", padx=5)
-text3.place(x=300, y=255, height=345, width=300)
+text3.place(relx=0.5, y=255, height=345, relwidth=0.5)
 text3.configure(state='disabled')
 
 # Latest Update History
